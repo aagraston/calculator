@@ -16,7 +16,8 @@ boday * {
   margin: auto;
   margin-top: 50px;
   align-items: center;
-  box-shadow: 10px 10px #606572;
+  border: 5px solid rgb(37, 50, 95);
+  border-radius: 6px 6px;
 }
 
 .calc-display {
@@ -32,16 +33,16 @@ boday * {
   display: flex; 
   flex-direction: row;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
 }
 
 .calc-key-pad {
   margin-top: 20px;
-  width: 400px;
+  width: 340px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: start;
   gap: 5px;
 }  
 
@@ -55,9 +56,9 @@ boday * {
 
 }
 
-.num-button {
+.button {
   color: white;
-  flex: 0 1 25%;
+  flex: 0 1 29%;
   background-color: rgb(38, 42, 56);
   display: flex;
   align-items: center;
@@ -67,8 +68,22 @@ boday * {
   font-weight: 700;
 }
 
-.num-button:before {
+.button:hover {
+  background-color: rgb(51, 61, 99);
+  cursor: pointer;
+}
+
+.button:before {
   display: block;
   content: '';
   padding-top: 100%;
+}
+
+#clear {
+  background-color: rgb(104, 33, 20)
+}
+
+#clear:hover {
+  background-color: rgb(134, 50, 35);
+  cursor: pointer;
 }
